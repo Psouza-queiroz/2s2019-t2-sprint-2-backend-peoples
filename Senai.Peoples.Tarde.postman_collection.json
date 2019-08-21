@@ -1,0 +1,131 @@
+{
+	"info": {
+		"_postman_id": "9b150f95-6dba-4b6d-aa02-45c843a72d20",
+		"name": "Senai.Peoples.Tarde",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Listar.Funcionario",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/api/funcionario",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"funcionario"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "BuscarPorId.Funcionario",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/api/funcionario/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"funcionario",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Cadastrar.Funcionario",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"Nome\" : \"Catarina\",\n\t\"Sobrenome\" : \"Strada\",\n\t\"DataNascimento\" : \"2000-12-24T00:00:00\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/funcionario",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"funcionario"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Atualizar.Funcionario",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"IdFuncionario\" : 1,\n\t\"Nome\" : \"Tadeu\",\n\t\"Sobrenome\" : \"Vitelli\",\n\t\"DataNascimento\" : \"1989-09-25T00:00:00\"\n}"
+				},
+				"url": {
+					"raw": "localhost:5000/api/funcionario",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"funcionario"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Deletar.Funcionario",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:5000/api/funcionario/7",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"funcionario",
+						"7"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
