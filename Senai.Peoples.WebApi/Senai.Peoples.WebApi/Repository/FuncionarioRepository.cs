@@ -18,7 +18,7 @@ namespace Senai.Peoples.WebApi.Repository
 
                 using (SqlConnection con = new SqlConnection(StringConexao))
             {
-                string Query = "SELECT IdFuncionario, Nome, Sobrenome, DataNascimento FROM Funcionarios";
+                string Query = "SELECT * FROM Funcionarios";
 
                 con.Open();
 
